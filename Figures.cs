@@ -14,8 +14,7 @@ using System.Threading.Tasks;
 
 namespace Figures
 {
-    internal class Figures
-    {
+
         class Point
         {
             public double x { get; set; }
@@ -415,7 +414,8 @@ namespace Figures
                 return temp_s;
             }
         }
-
+    internal class Figures
+    {
         static void Main(string[] args)
         {
             Point p1 = new Point(4, 0);
@@ -472,7 +472,7 @@ namespace Figures
             Console.WriteLine($"Периметр эллипса равен {e1.Figure_Perimeter()}\n");
             Console.WriteLine();
 
-            Geometric_Figure[] gf1 = new Geometric_Figure[] { t1, s1, d1 };
+            Geometric_Figure[] gf1 = new Geometric_Figure[] { t1, s1, d1};
             CompositeFigure cf1 = new CompositeFigure(gf1);
             cf1.ToString();
             Console.WriteLine($"Площадь сложной фигуры равна {cf1.Figure_Square()}");
